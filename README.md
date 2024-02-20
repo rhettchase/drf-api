@@ -42,7 +42,7 @@ Once server is running, use Thunder Bird or other application of your choice to 
 
 ##### GET Requests (Read)
 
-- [`http://0.0.0.0:8000/api/v1/brews`](http://0.0.0.0:8000/api/v1/brews)
+- [`http://0.0.0.0:8000/api/v1/brews`](http://0.0.0.0:8000/api/v1/brews/)
 
 ##### POST Requests (Add)
 
