@@ -17,26 +17,40 @@
 
 ### Setup
 
-- `pip install -r requirements.txt`
+#### To run in Docker
+
+- Install Docker Desktop and verify installation
+  - Run `docker --version` and `docker-compose --version` to ensure both are correctly installed.
 
 #### `.env` requirements (where applicable)
 
 <!-- i.e.
 - `PORT` - Port Number
 - `DATABASE_URL` - URL to the running Postgres instance/db -->
-- N/A
+- `PORT` - 8000
 
 #### How to initialize/run your application (where applicable)
 
 - Clone repo
 - Install dependencies (see above)
-- See the page in browser by running `python manage.py runserver`
-- Open the page via the local server address specified in the terminal
-
+- See the page in browser by running `docker-compose up`
+- Open the page in the localhost specified in the terminal to view GET request and add `/api/v1/brews` to end of url
 
 #### How to use your library (where applicable)
 
-- N/A
+Use Thunder Bird or other application of your choice to complete PUT, POST, DELETE Requests
+
+##### GET Requests (Read)
+
+- `http://0.0.0.0:8000/api/v1/brews`
+
+##### PUT Requests (Update)
+
+- `http://0.0.0.0:8000/api/v1/brews/7/{id}`
+
+##### POST Requests (Add)
+
+- `http://0.0.0.0:8000/api/v1/brews`
 
 #### Tests
 
