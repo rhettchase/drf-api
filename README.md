@@ -38,19 +38,34 @@
 
 #### How to use your library (where applicable)
 
-Use Thunder Bird or other application of your choice to complete PUT, POST, DELETE Requests
+Once server is running, use Thunder Bird or other application of your choice to complete GET, PUT, POST, DELETE Requests. GET requests also can be completed in the browser.
 
 ##### GET Requests (Read)
 
-- `http://0.0.0.0:8000/api/v1/brews`
-
-##### PUT Requests (Update)
-
-- `http://0.0.0.0:8000/api/v1/brews/7/{id}`
+- [`http://0.0.0.0:8000/api/v1/brews`](http://0.0.0.0:8000/api/v1/brews)
 
 ##### POST Requests (Add)
 
-- `http://0.0.0.0:8000/api/v1/brews`
+- User Thunder Client to add JSON body, OR go to bottom of page [`http://0.0.0.0:8000/api/v1/brews/`](http://0.0.0.0:8000/api/v1/brews/)
+
+```json
+{
+    "owner": 1,
+    "name": "Vanilla Porter",
+    "brew_type": "ST",
+    "brewery": "Breckenridge Brewery",
+    "description": "Aromas of vanilla and toasted grain set the stage for mellow flavors of vanilla and dark roasted malts in this popular porter."
+}
+```
+
+##### PUT Requests (Update)
+
+- [`http://0.0.0.0:8000/api/v1/brews/{id}/`](http://0.0.0.0:8000/api/v1/brews/2/)
+- edit JSON body (see example above)
+
+##### DELETE Requests
+
+- [`http://0.0.0.0:8000/api/v1/brews/{id}/`](http://0.0.0.0:8000/api/v1/brews/2/)
 
 #### Tests
 
