@@ -4,7 +4,7 @@
 
 ### Project Description
 
-
+Fully functional CRUD API app that allows users to view the collection of brews (GET), as well as Create, Update, and Delete brews from the collection.
 
 ### Author: Rhett Chase
 
